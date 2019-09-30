@@ -1,0 +1,35 @@
+ 
+#comment-area {
+  margin: 2px;
+  padding: 0px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+h4 {
+    font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
+  }
+
+li img {
+  float: left;
+  margin: 0 12px 0 0;
+}
+ 
+li p {
+  font: 200 22px/1.5 Georgia, Times New Roman, serif;
+  margin: 4px;
+  padding: 4px;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
