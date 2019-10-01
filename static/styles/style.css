@@ -1,3 +1,11 @@
+p {
+    margin: 10px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0.5em;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
@@ -5,15 +13,15 @@ table, th, td {
 }
 
 th, td {
-    padding: 10px;
+    padding: 0.5em;
 }
 
 section {
-    margin: 10px;
+    margin: 0.5em;
 }
 
 .tabbar-icon {
-    margin-right: 10px;
+    margin-right: 0.5em;
     width: 46px;
 }
 .icon-row {
@@ -24,7 +32,7 @@ section {
 }
 
 .screenshot {
-    padding: 10px;
+    padding: 0.5em;
 }
 
 .text-container {

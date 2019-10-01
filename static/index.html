@@ -40,60 +40,57 @@
         </header>
 
         <main class="main">
-            <article class="article">
-                <section>
-                    <div class="overview">
-                            <h1>App Overview</h1>  
-                            <p>WxAlert is a mobile application that provides current weather information from the National Weather Service (NWS) 
-                                for more than 20,000 cities across the continental United States. The application's primary view presents weather information
-                                that is published daily. Weather information is presented using various icons. When available, weather alert notifications, for the local area, 
-                                are displayed in the primary weather view. Alert notifications are displayed using a list of icons. Details of the alert is presented, in text format,
-                                on a separate view.
-                            </p>
-                    </div>
-                    <div class="card-container">
-                        <div class="card" style="width: 26rem;"> 
-                            <img class="card-img-top" src="./images/screenshot/screen_portrait.jpg" alt="typical">
-                            <div class="card-body">
-                                <h3 class="card-title">Weather View</h3>
-                                <h4 class="card-subtitle">Portrait Mode</h4>
-                                <p class="card-text">Forecast in portrait mode. This forecast includes an air quality alert and a 
-                                    flood advisory.</p>
-                            </div>
+ 
+                <div class="overview">
+                    <h2>App Overview</h2>  
+                    <p>WxAlert is a mobile application that provides current weather information from the National Weather Service (NWS) 
+                        for more than 20,000 cities across the continental United States. The application's primary view presents weather information
+                        that is published daily. Weather information is presented using various icons. When available, weather alert notifications, for the local area, 
+                        are displayed in the primary weather view. Alert notifications are displayed using a list of icons. Details of the alert is presented, in text format,
+                        on a separate view.
+                    </p>
+                </div>
+                <section class="cards">
+                    <article class="card" style="width: 22.5em;">
+                        <picture class="screenshot">
+                            <img src="./images/screenshot/screen_portrait.jpg" alt="portrait">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Weather View</h2>
+                            <p>Weather forecast presented in portrait view. Flood and air quality advisories are posted.</p>
                         </div>
-                        <div class="card" style="width: 26rem;"> 
-                            <img class="card-img-top" src="./images/screenshot/screen_landscape.jpg" alt="alert">
-                            <div class="card-body">
-                                <h3 class="card-title">Weather View</h3>
-                                <h4 class="card-subtitle">Landscape Mode</h4>
-                                <p class="card-text">Forecast in landscape mode showing flood advisory, severe thunderstorm warning, 
-                                    and special weather statement alert.</p>
-                            </div>
+                    </article>
+                    <article class="card" style="width: 22.5em;">
+                        <picture class="screenshot">
+                            <img src="./images/screenshot/screen_landscape.jpg" alt="landscape">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Weather View</h2>
+                            <p>Weather forecast presented in landscape view. Flood, severe thunderstorm and special weather advisories are posted.</p>
                         </div>
-                        <div class="card" style="width: 26rem;"> 
-                            <img class="card-img-top" src="./images/screenshot/screen_alert.jpg" alt="callout">
-                            <div class="card-body">
-                                <h3 class="card-title">Weather View</h3>
-                                <h4 class="card-subtitle">Weather Alert</h4>
-                                <p class="card-text">Caution icon with a flood advisory and a badge count. A badge count of two means
-                                    two weather alerts were issued in the last weather forecast. </p>
-                            </div>
+                    </article>
+                    <article class="card" style="width: 22.5em;">
+                        <picture class="screenshot">
+                            <img src="./images/screenshot/screen_alert.jpg" alt="alert">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Weather View</h2>
+                            <p>Weather forecast with flood advisory detail icon shown. Two advisories have been posted.</p>
                         </div>
-                        <div class="card" style="width: 26rem;"> 
-                            <img class="card-img-top" src="./images/screenshot/screen_alert_detail.jpg" alt="callout">
-                            <div class="card-body">
-                                <h3 class="card-title">Weather View</h3>
-                                <h4 class="card-subtitle">Weather Alert Detail</h4>
-                                <p class="card-text">Details of a Coastal Flood Statement alert.</p>
-                            </div>
+                    </article>
+                    <article class="card" style="width: 22.5em;">
+                        <picture class="screenshot">
+                            <img src="./images/screenshot/screen_alert_detail.jpg" alt="alert detail">
+                        </picture>
+                        <div class="card-content">
+                            <h2>Alert Detail View</h2>
+                            <p>Details of a Coastal Flood Advisory as issued by National Weather Service (NWS) Miami, FL.</p>
                         </div>
-                    </div>
-
+                    </article>
                 </section>
                 <section class="disclaimer">
                     <h2>Disclaimer</h2> 
-                    <p>
-                        This application should not be used as a primary source for emergency weather information that is to be received 
+                    <p>This application should not be used as a primary source for emergency weather information that is to be received 
                         in a timely manner. For timely information related to tornado, flash flooding, hurricane, avalanche, etc. depend
                         on other well established sources of timely weather notification as provided by the National Weather Service and 
                         reliable media outlets. 
@@ -185,7 +182,7 @@
  
         <footer>
             <hr>
-            &copy; <?php echo date("Y"); ?> wxalert
+            &copy; wxalert
         </footer>
     </body>
 </html>    
