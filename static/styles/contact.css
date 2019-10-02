@@ -1,13 +1,14 @@
 /* Mobile First */
 
-* {
-    box-sizing: border-box;
-}
-
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+.contact-header header {
+    margin: 0;
+    padding: 0;
 }
 
 .col-25, .col-75, input[type=submit], input[type=number] {
@@ -50,7 +51,9 @@ label {
 
 input[type=text], input[type=number] {
     width: 100%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;

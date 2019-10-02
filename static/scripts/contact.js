@@ -86,7 +86,7 @@ function displayComments(json_data) {
     var list = $("<ul>");
 
     for (var i = 0; i < json_data.length; i++) {
-        comment = "<img src='./images/avatar.png'/>" +
+        comment = "<div class='circle'><img src='./images/avatar.png'/></div>" +
         "<h3>" + json_data[i]['name'] + "</h3>" +
         "<h4>" + json_data[i]['date'] + "</h4>" +
         "<p>" + json_data[i]['comment'] + "</p>";
@@ -126,7 +126,7 @@ function generateCaptcha() {
 }
 
 function displayCaptcha(captcha) {
-    let captchaImage = "<p><h3>Verify you are human</h3>" + "<h4>Solve the math problem:</h4></p>" + "<img src='" + captcha.data + "'/>";
+    let captchaImage = "<h2>Human Verification</h2>" + "<h3>Solve the math problem:</h3>" + "<img src='" + captcha.data + "'/>";
     $("#captcha-img").html(captchaImage);
 }
 

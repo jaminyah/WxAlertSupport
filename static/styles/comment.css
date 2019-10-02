@@ -18,18 +18,28 @@ h4 {
     font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
   }
 
+.captcha-img {
+  padding: 4px;
+}
+
+.captcha-img h2, h3 {
+  margin-left: 0px;
+}
+  
 li img {
   float: left;
   margin: 0 12px 0 0;
+  border-radius: 50%;
+  background-color:#00d4ff;
+  box-shadow:1px 1px 2px #000;
 }
  
 li p {
-  font: 200 22px/1.5 Georgia, Times New Roman, serif;
   margin: 4px;
   padding: 4px;
 }
  
-li {
+#comment-area li {
   padding: 10px;
   overflow: auto;
 }
