@@ -41,132 +41,134 @@
         </header>
 
         <main class="main">
-                <article class="article">
-                    <section>
-                        <h1>Caution Icon</h1>
-                        <p>Each alert notification displayed at the top of the weather view page has an associated caution icon. Like alert icons, caution icons
-                             are of three categories:
-                            <ol>
-                                <li>Advisory or statement.</li>
-                                <li>Watch</li>
-                                <li>Warning</li>
-                            </ol>
+            <section>
+                <h1>Caution Icon</h1>
+                <p>Each alert notification displayed at the top of the weather view page has an associated caution icon. Like alert icons,
+                    caution icons are of three categories:
+                    <ol>
+                        <li>Advisory / Statement</li>
+                        <li>Watch</li>
+                        <li>Warning</li>
+                    </ol>
+                </p>
+                <div id="badge_count">
+                    <h2>Alert Counter</h2>
+                    <img class="img-badge" src="./images/screenshot/screen_badge.jpg" alt="badge count">
+                        <p>
+                            Only the most recent caution icon will be shown for any forecast day. In the case where several alert notifications are posted 
+                            in the forecast for that day, a red badge icon with a count will be displayed next to the caution icon. Whenever a caution icon 
+                            is shown in the weather forecast, tapping on the icon displays further details of the alert notification. Swiping on the alert 
+                            detail view will reveal another alert detail if the badge count is greater than one.
                         </p>
-                        <div id="badge_count">
-                            <img src="./images/screenshot/screen_badge.jpg" alt="badge count">
-                        </div>
-                        <div id="badge_text">
-                            <p>
-                                Only the most recent caution icon will be shown for any forecast day. In the case where several alert notifications are posted in the forecast
-                                for that day, a red badge icon with a count will be displayed next to the caution icon. Whenever a caution icon is shown in the weather 
-                                forecast, tapping on the icon displays further details of the alert notification. Swiping on the alert detail view will reveal another 
-                                alert detail if the badge count is greater than one.
-                            </p>
-                        </div>
-    
-                        <table style="width:100%">
-                            <caption>Caution Icons</caption>
-                            <thead>
-                                <tr>
-                                    <th class="row-icon">Icon</th>
-                                    <th class="row-desc">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="./images/caution/dia_advisory.png" alt="advisory"></td>
-                                    <td>Advisory weather notification</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="./images/caution/dia_watch.png" alt="watch"></td>
-                                    <td>Watch weather notification.</td>
-                                </tr> 
-                                <tr>
-                                    <td><img src="./images/caution/dia_warning.png" alt="warning"></td>
-                                    <td>Warning weather notification.</td>
-                                </tr>             
-                            </tbody>         
-                        </table>
-                    </section>
-                    <section>
-                        <h2>Advisory Icons</h2>
-                        <table style="width:100%">
-                                <caption>Example Advisory Notification Icons</caption>
-                            <thead>
-                                <tr>
-                                    <th class="row-icon">Icon</th>
-                                    <th class="row-desc">Description</th>
-                                </tr>                                
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="./images/caution/dia_advis_blizz.png" alt="blizzard"></td>
-                                    <td>Blizzard advisory.</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="./images/caution/dia_advis_flood.png" alt="flooding"></td>
-                                    <td>Flood advisory.</td>
-                                </tr> 
-                                <tr>
-                                    <td><img src="./images/caution/dia_advis_ssurge.png" alt="storm surge"></td>
-                                    <td>Storm surge advisory.</td>
-                                </tr>   
-                            </tbody>
-                        </table>
-                    </section>
-                    <section>
-                        <h2>Watch Icons</h2>
-                        <table style="width:100%">
-                                <caption>Example Watch Notification Icons</caption>
-                            <thead>
-                                <tr>
-                                    <th class="row-icon">Icon</th>
-                                    <th class="row-desc">Description</th>
-                                </tr>                               
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="./images/caution/dia_watch_fldlakeshore.png" alt="lake shore flooding"></td>
-                                    <td>Lake shore flooding.</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="./images/caution/dia_watch_freeze.png" alt="freeze"></td>
-                                    <td>Freeze watch.</td>
-                                </tr> 
-                                <tr>
-                                    <td><img src="./images/caution/dia_watch_windchill.png" alt="wind chill"></td>
-                                    <td>Wind chill watch.</td>
-                                </tr>                   
-                            </tbody>
-                        </table>
-                    </section>
-                    <section>
-                        <h2>Warning Icons</h2>
-                        <table style="width:100%">
-                                <caption>Example Warning Notification Icons</caption>
-                            <thead>
-                                <tr>
-                                    <th class="row-icon">Icon</th>
-                                    <th class="row-desc">Description</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><img src="./images/caution/dia_warn_icestorm.png" alt="ice storm"></td>
-                                    <td>Ice storm warning.</td>
-                                </tr>
-                                <tr>
-                                    <td><img src="./images/caution/dia_warn_ripcurrent.png" alt="rip current"></td>
-                                    <td>Rip current warning.</td>
-                                </tr> 
-                                <tr>
-                                    <td><img src="./images/caution/dia_warn_tropicalstorm.png" alt="tropical storm"></td>
-                                    <td>Tropical storm warning.</td>
-                                </tr>            
-                            </tbody>
-                        </table>
-                    </section>
-                </article>
+                </div>
+            </section>
+            <section>
+                <table style="width:100%">
+                    <caption><strong>Caution Icon Types</strong></caption>
+                    <thead>
+                        <tr>
+                            <th class="row-icon">Icon</th>
+                            <th class="row-desc">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./images/caution/dia_advisory.png" alt="advisory"></td>
+                            <td>Advisory weather notification</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/caution/dia_watch.png" alt="watch"></td>
+                            <td>Watch weather notification.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/caution/dia_warning.png" alt="warning"></td>
+                            <td>Warning weather notification.</td>
+                        </tr>             
+                    </tbody>         
+                </table>
+            </section>
+            <section>
+                <h2>Advisory Icons</h2>
+                <table style="width:100%">
+                    <caption><strong>Advisory / Statement Icons</strong></caption>
+                    <thead>
+                        <tr>
+                            <th class="row-icon">Icon</th>
+                            <th class="row-desc">Description</th>
+                        </tr>                                
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./images/screenshot/screen_badge.jpg" alt="screen_badge"></td>
+                            <td>Badge count indicates the number of weather alerts issued.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/caution/dia_advis_blizz.png" alt="blizzard"></td>
+                            <td>Blizzard advisory.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/caution/dia_advis_flood.png" alt="flooding"></td>
+                            <td>Flood advisory.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/caution/dia_advis_ssurge.png" alt="storm surge"></td>
+                            <td>Storm surge advisory.</td>
+                        </tr>   
+                        </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>Watch Icons</h2>
+                    <table style="width:100%">
+                    <caption><strong>Watch Icons</strong></caption>
+                        <thead>
+                            <tr>
+                                <th class="row-icon">Icon</th>
+                                <th class="row-desc">Description</th>
+                            </tr>                               
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="./images/caution/dia_watch_fldlakeshore.png" alt="lake shore flooding"></td>
+                                <td>Lake shore flooding.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/caution/dia_watch_freeze.png" alt="freeze"></td>
+                                <td>Freeze watch.</td>
+                            </tr> 
+                            <tr>
+                                <td><img src="./images/caution/dia_watch_windchill.png" alt="wind chill"></td>
+                                <td>Wind chill watch.</td>
+                            </tr>                   
+                        </tbody>
+                    </table>
+            </section>
+            <section>
+                <h2>Warning Icons</h2>
+                    <table style="width:100%">
+                        <caption><strong>Warning Icons</strong></caption>
+                    <thead>
+                        <tr>
+                            <th class="row-icon">Icon</th>
+                            <th class="row-desc">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="./images/caution/dia_warn_icestorm.png" alt="ice storm"></td>
+                            <td>Ice storm warning.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/caution/dia_warn_ripcurrent.png" alt="rip current"></td>
+                            <td>Rip current warning.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/caution/dia_warn_tropicalstorm.png" alt="tropical storm"></td>
+                            <td>Tropical storm warning.</td>
+                        </tr>            
+                    </tbody>
+                </table>
+            </section>
         </main>
  
         <footer>

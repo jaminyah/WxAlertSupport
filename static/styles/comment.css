@@ -11,7 +11,7 @@ ul {
 }
  
 h3 {
-  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+  font: bold 18px/1.5 Helvetica, Verdana, sans-serif;
 }
 
 h4 {
@@ -22,8 +22,9 @@ h4 {
   padding: 4px;
 }
 
-.captcha-img h2, h3 {
-  margin-left: 0px;
+.captcha-img h4, h5 {
+
+  margin-left: 2px;
 }
   
 li img {
@@ -35,7 +36,7 @@ li img {
 }
  
 li p {
-  margin: 4px;
+  margin: 10px;
   padding: 4px;
 }
  

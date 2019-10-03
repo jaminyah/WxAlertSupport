@@ -86,10 +86,10 @@ function displayComments(json_data) {
     var list = $("<ul>");
 
     for (var i = 0; i < json_data.length; i++) {
-        comment = "<div class='circle'><img src='./images/avatar.png'/></div>" +
+        comment = "<div class='circle'><img src='./images/avatar.png'/>" +
         "<h3>" + json_data[i]['name'] + "</h3>" +
-        "<h4>" + json_data[i]['date'] + "</h4>" +
-        "<p>" + json_data[i]['comment'] + "</p>";
+        json_data[i]['date'] +
+        "<p>" + json_data[i]['comment'] + "</p>" + "</div>";
             
         var item = $("<li>").html(comment);
         list.append(item);
