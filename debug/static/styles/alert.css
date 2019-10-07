@@ -1,0 +1,17 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+.row-icon {
+    width: 40%;
+}
+
+.row-desc {
+    width: 60%;
+}
+
+th, td {
+    padding: 10px;
+}
