@@ -1,0 +1,41 @@
+Reference links:
+1. https://linode.com/docs/web-servers/nginx/use-nginx-reverse-proxy/
+2. https://jonathanmh.com/deploying-go-apps-systemd-10-minutes-without-docker/
+3. https://www.linode.com/docs/tools-reference/file-transfer/filezilla/
+
+Run / Stop / Status Service
+- service wxalert start
+- service wxalert stop
+- service wxalert status
+
+Site Nginx configuration file
+- /etc/nginx/conf.d/support.wxalert.us.conf
+
+Service file
+- /lib/systemd/system/wxalert.service
+
+Test Nginx after conf file change
+- sudo nginx -t
+
+Reload Nginx after conf file change
+- sudo nginx -s reload
+
+CertBot
+- Renew Cert
+    - $certbot renew
+- Update Cert
+    - $certbot certonly
+
+Bundle html, css, js files
+- go.rice
+    - ../../bin/rice embed-go
+
+Build executable to create SQLite database file
+- go build
+* Note: SQLite3 must be installed on Linode servers
+
+Path to executable and database
+- ~/home/jaminyah/public/sites/wxalert/support/
+
+Changes to wxalert.service file
+- systemctl daemon-reload
