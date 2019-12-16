@@ -4,7 +4,8 @@ body {
 }
 
 body {
-    font: Helvetica, Verdana, sans-serif; 
+   /* font: Helvetica, Verdana, sans-serif; */
+    font: 20px/1.5 Helvetica, Verdana, sans-serif;
 }
 
 p {
@@ -33,7 +34,7 @@ main {
 
 .body-content {
     display: inline-block;
-    font: 18px/1.5 Helvetica, Verdana, sans-serif;
+   /* font: 20px/1.5 Helvetica, Verdana, sans-serif;*/
 }
 
 table, th, td {
