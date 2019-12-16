@@ -37,7 +37,7 @@ func submitAjax(w http.ResponseWriter, r *http.Request) {
 	statement.Exec(user_name, user_message, now_time)
 
 	// Read database
-	rows, _ := database.Query("SELECT id, username, comment, date FROM comments ORDER BY id DESC LIMIT 0, 10")
+	rows, _ := database.Query("SELECT id, username, comment, date FROM comments ORDER BY id DESC LIMIT 0, 50")
 
 	var db_id int
 	var db_name string

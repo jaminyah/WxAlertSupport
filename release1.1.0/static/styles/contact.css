@@ -1,0 +1,142 @@
+/* Mobile First */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contact-header header {
+    margin: 0;
+    padding: 0;
+}
+
+.col-25, .col-75, input[type=submit], input[type=number] {
+    width: 100%;
+}
+
+label {
+    margin: 4px;
+    padding: 2px;
+}
+
+input[type=submit] {
+    background-color: #0000ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 6px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type=button] {
+    background-color: #0000ff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 6px;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+label {
+    padding: 12px, 12px, 12px, 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+.captcha-img {
+    cursor: pointer;
+    position: relative;
+    border: 1px solid chartreuse;
+    box-shadow: 0 0 6px #cac6c6;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hide {
+    display: none;
+}
+
+.alert {
+    background: burlywood;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    padding: 20px;
+}
+
+.message {
+    color: black;
+}
+
+@media screen and (min-width: 600px) {
+    .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+    }
+
+    .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+    }
+    
+    input[type=submit] {
+        width: auto;
+        float: right;
+    } 
+
+    input[type=button] {
+        width: auto;
+        float: left;
+    } 
+
+
+    input[type=text], textarea {
+        resize: horizontal;
+    }
+}

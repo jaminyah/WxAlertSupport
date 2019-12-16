@@ -1,0 +1,46 @@
+ 
+#comment-area {
+  margin: 2px;
+  padding: 0px;
+}
+ 
+ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
+ 
+h3 {
+  font: bold 18px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+h4 {
+    font: bold 16px/1.5 Helvetica, Verdana, sans-serif;
+  }
+
+.captcha-img {
+  padding: 4px;
+}
+
+.captcha-img h4, h5 {
+
+  margin-left: 2px;
+}
+  
+li img {
+  float: left;
+  margin: 0 12px 0 0;
+  border-radius: 50%;
+  background-color:#00d4ff;
+  box-shadow:1px 1px 2px #000;
+}
+ 
+li p {
+  margin: 10px;
+  padding: 4px;
+}
+ 
+#comment-area li {
+  padding: 10px;
+  overflow: auto;
+}

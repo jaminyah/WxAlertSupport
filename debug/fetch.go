@@ -12,7 +12,7 @@ func fetchComments(w http.ResponseWriter, r *http.Request) {
 	
 
 	// Read database
-	rows, _ := database.Query("SELECT id, username, comment, date FROM comments ORDER BY id DESC LIMIT 0, 10")
+	rows, _ := database.Query("SELECT id, username, comment, date FROM comments ORDER BY id DESC LIMIT 0, 50")
 
 	var db_id int
 	var db_name string

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WxAlert Contact</title>
+        <link rel="stylesheet" href="./styles/nav.css">
+        <link rel="stylesheet" href="./styles/contact.css">
+        <link rel="stylesheet" href="./styles/comment.css">
+        <link rel="stylesheet" href="./styles/loader.css">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        
+       <!-- <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script> -->
+       <script src="./scripts/jquery-3.4.1.min.js"></script>
+    </head>
+    <body>
+         <header class="contact-header">
+            <nav class="navbar">
+                <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                    <i class="hamburger"></i>Menu
+                </label>
+                <a href="./" class="logo"><img src="./images/logo/app_icon64.png"></a>
+                <input type="checkbox" id="chkToggle"></input>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="./ui.html" class="nav-links">UI</a>
+                    </li>
+                    <li>
+                        <a href="./weather.html" class="nav-links">Weather</a>
+                    </li>
+                    <li>
+                        <a href="./alert.html" class="nav-links">Alert</a>
+                    </li>
+                    <li>
+                        <a href="./caution.html" class="nav-links">Caution</a>
+                    </li>
+                    <li>
+                        <a href="./legal.html" class="nav-links">Legal</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <h1>Contact Us</h1>
+        <div class="container">
+            <form action="" method="post" id="comment-form">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="username" id="username" placeholder="2 - 20 characters" pattern="[a-zA-Z][a-zA-Z-9-_\.]{1,20}" 
+                        required minlength="2" maxlength="20">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="msg">Message:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="message" id="message" pattern="[a-zA-Z0-9]+" required minlength="3" maxlength="140">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="row captcha-row"> 
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <div id="captcha-img"></div>
+                        <input type="number" name="captcha-solution" id="captcha-solution" placeholder="Your math solution: " 
+                            pattern="[0-9]*" inputmode="numeric" required >
+                        <input type="button" class="captcha-verify" id="captcha-verify" onclick="verifyCaptcha()" value="Verify Value">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25"></div>
+                    <div class="col-75">
+                        <div class="alert hide">
+                            <div class="message"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" id="publish" value="Publish">
+                </div>
+            </form>
+        </div>
+
+        <div id="loader"></div>
+        <div id="comment-area"></div>
+
+        <script src="./scripts/contact.js"></script>
+
+        <footer>
+            <hr>
+            <p>&copy; wxalert</p>
+        </footer>
+    </body>
+</html>    

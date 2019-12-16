@@ -1,0 +1,59 @@
+/*
+    Reference: https://getflywheel.com/layout/flexbox-create-modern-card-design-layout/
+*/
+/*
+body {
+    margin: 0;
+}*/
+
+.cards {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    background: white;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+    padding-top: 0.5em;
+    border: 1 px solid #131010;
+    border-radius: .25rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    padding: 1px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.card-content p {
+    font-size: 1.0em;
+    text-align: left;
+}
+
+
+/* Flexbox */
+
+@media screen and (min-width: 40em) {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .card {
+        flex: 0 1 calc(50% - 1em);
+    }
+}
+
+@media screen and (min-width: 60em) {
+    
+    .card {
+        flex: 0 1 calc(25% - 1em);
+    }
+}

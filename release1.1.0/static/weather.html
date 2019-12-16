@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WxAlert Weather</title>
+        <link rel="stylesheet" href="./styles/nav.css">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    </head>
+    <body>
+         <header>
+            <nav class="navbar">
+                <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                    <i class="hamburger"></i>Menu
+                </label>
+                <a href="./" class="logo"><img src="./images/logo/app_icon64.png"></a>
+                <input type="checkbox" id="chkToggle"></input>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="./ui.html" class="nav-links">UI</a>
+                    </li>
+                    <li>
+                        <a href="./weather.html" class="nav-links">Weather</a>
+                    </li>
+                    <li>
+                        <a href="./alert.html" class="nav-links">Alert</a>
+                    </li>
+                    <li>
+                        <a href="./caution.html" class="nav-links">Caution</a>
+                    </li>
+                    <li>
+                        <a href="./legal.html" class="nav-links">Legal</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section>
+                    <div>
+                       <table style="width:100%">
+                            <caption><strong>Weather Icons</strong></caption>
+                        <tr>
+                            <th>Icon</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/bkn.png" alt="broken"></td>
+                            <td>Sky condition broken.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/blizzard.png" alt="blizzard"></td>
+                            <td>Blizzard weather condition.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/dust.png" alt="dust"></td>
+                            <td>Dust.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/few.png" alt="few"></td>
+                            <td>Few clouds.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/fzra.png" alt="freezing rain"></td>
+                            <td>Freezing rain.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/haze.png" alt="haze"></td>
+                            <td>Haze.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/ovc.png" alt="overcast"></td>
+                            <td>Overcast sky.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/rain.png" alt="rain"></td>
+                            <td>Rain.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/rain_showers.png" alt="rain showers"></td>
+                            <td>Rain showers.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/rain_showers_hi.png" alt="rain showers hi"></td>
+                            <td>Rain showers, hi visibilty.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/rain_sleet.png" alt="rain sleet"></td>
+                            <td>Rain with sleet.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/rain_snow.png" alt="rain snow"></td>
+                            <td>Rain with snow.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/skc.png" alt="sky clear"></td>
+                            <td>Sky clear.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/sleet.png" alt="sleet"></td>
+                            <td>Sleet.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/smoke.png" alt="smoke"></td>
+                            <td>Smoke.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/snow_fzra.png" alt="snow freezing rain"></td>
+                            <td>Snow with freezing rain.</td>
+                            </tr>
+                        <tr>
+                            <td><img src="./images/wx/snow_sleet.png" alt="snow sleet"></td>
+                            <td>Snow with sleet.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/tsra.png" alt="thunderstorm"></td>
+                            <td>Thunderstorm.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/tsra_hi.png" alt="thunderstorm high visibilty"></td>
+                            <td>Thunderstorm high visibilty.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/tsra_sct.png" alt="thunderstorm, scattered sky"></td>
+                            <td>Thunderstorm, scattered sky.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/wind_bkn.png" alt="broken sky, windy"></td>
+                            <td>Broken sky, windy condition.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wind_few.png" alt="few clouds, windy"></td>
+                            <td>Few clouds, windy condition.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wind_ovc.png" alt="overcast, windy"></td>
+                            <td>Overcast sky, windy condition.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wind_sct.png" alt="scattered, windy"></td>
+                            <td>Scattered sky, windy condition.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/wind_skc.png" alt="Clear, windy"></td>
+                            <td>Clear sky, windy condition.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wx_hot.png" alt="hot"></td>
+                            <td>Hot weather condition.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wx_hurricane.png" alt="hurricance"></td>
+                            <td>Hurricane.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/wx/wx_tornado.png" alt="tornado"></td>
+                            <td>Tornado.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/wx/wx_tstorm.png" alt="tropical storm"></td>
+                            <td>Tropical storm.</td>
+                        </tr>               
+                        </table>
+                    </div>
+                </section>
+            </article>
+        </main>
+ 
+        <footer>
+            <hr>
+            &copy; <?php echo date("Y"); ?> wxalert
+        </footer>
+    </body>
+</html>    

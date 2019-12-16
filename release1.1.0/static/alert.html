@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WxAlert Alert</title>
+        <link rel="stylesheet" href="./styles/nav.css">
+        <link rel="stylesheet" href="./styles/alert.css">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+
+    </head>
+    <body>
+         <header>
+            <nav class="navbar">
+                <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                    <i class="hamburger"></i>Menu
+                </label>
+                <a href="./" class="logo"><img src="./images/logo/app_icon64.png"></a>
+                <input type="checkbox" id="chkToggle"></input>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="./ui.html" class="nav-links">UI</a>
+                    </li>
+                    <li>
+                        <a href="./weather.html" class="nav-links">Weather</a>
+                    </li>
+                    <li>
+                        <a href="./alert.html" class="nav-links">Alert</a>
+                    </li>
+                    <li>                    <li>
+                        <a href="./legal.html" class="nav-links">Legal</a>
+                        </li>
+                        <a href="./caution.html" class="nav-links">Caution</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section>
+                    <h1>Weather Alerts</h1>
+                    <p>Posted alert notification are displayed at the top of the weather view page. Alert icons are of three categories. 
+                        <ol>
+                            <li>Advisory or statement.</li>
+                            <li>Watch</li>
+                            <li>Warning</li>
+                        </ol>
+                    </p>
+                    <table style="width:100%">
+                        <caption>Alert Icon Categories</caption>
+                    <tr>
+                        <th class="row-icon">Icon</th>
+                        <th class="row-desc">Description</th>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/alert/alert_caution64.png" alt="caution icon"></td>
+                        <td>Alert advisory</td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/alert/alert_watch64.png" alt="watch icon"></td>
+                        <td>Alert watch.</td>
+                    </tr> 
+                    <tr>
+                        <td><img src="./images/alert/alert_warning64.png" alt="watch icon"></td>
+                        <td>Alert warning.</td>
+                    </tr>                      
+                    </table>
+                </section>
+                <section>
+                    <h2>Advisory Icons</h2>
+                    <table style="width:100%">
+                        <caption>Example Advisory Icons</caption>
+                        <thead>
+                            <tr>
+                                <th class="row-icon">Icon</th>
+                                <th class="row-desc">Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="./images/alert/advis_cflood.png" alt="coastal flooding"></td>
+                                <td>Coastal flood.</td>
+                            </tr>
+                            <tr>
+                                <td><img src="./images/alert/advis_ice_storm.png" alt="ice storm"></td>
+                                <td>Ice storm.</td>
+                            </tr> 
+                            <tr>
+                                <td><img src="./images/alert/advis_tsra.png" alt="thunder storm"></td>
+                                <td>Thunder storm.</td>
+                            </tr>     
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h2>Watch Icons</h2>
+                    <table style="width:100%">
+                            <caption>Example Watch Icons</caption>
+                        <tr>
+                            <th class="row-icon">Icon</th>
+                            <th class="row-desc">Description</th>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/alert/watch_avalanche.png" alt="avalanche"></td>
+                            <td>Avalanche.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/alert/watch_firewx.png" alt="fire weather"></td>
+                            <td>Fire weather.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/alert/watch_high_wind.png" alt="high wind"></td>
+                            <td>High wind.</td>
+                        </tr>                      
+                        </table>
+                </section>
+                <section>
+                    <h2>Warning Icons</h2>
+                    <table style="width:100%">
+                            <caption>Example Warning Icons</caption>
+                        <tr>
+                            <th class="row-icon">Icon</th>
+                            <th class="row-desc">Description</th>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/alert/warn_hard_frz.png" alt="hard freeze warning"></td>
+                            <td>Hard freeze.</td>
+                        </tr>
+                        <tr>
+                            <td><img src="./images/alert/warn_lakeshorefld.png" alt="lake shore flooding"></td>
+                            <td>Lake shore flooding.</td>
+                        </tr> 
+                        <tr>
+                            <td><img src="./images/alert/warn_red_flag.png" alt="red flag warning"></td>
+                            <td>Red flag.</td>
+                        </tr>                      
+                        </table>
+                </section>
+            </article>
+        </main>
+ 
+        <footer>
+            <hr>
+           <p> &copy; wxalert</p>
+        </footer>
+    </body>
+</html>    

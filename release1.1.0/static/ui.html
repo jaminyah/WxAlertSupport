@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WxAlert UI</title>
+        <link rel="stylesheet" href="./styles/nav.css">
+        <link rel="stylesheet" href="./styles/style.css">
+
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    </head>
+    <body>
+         <header>
+            <nav class="navbar">
+                <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+                    <i class="hamburger"></i>Menu
+                </label>
+                <a href="./" class="logo"><img src="./images/logo/app_icon64.png"></a>
+                <input type="checkbox" id="chkToggle"></input>
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="./" class="nav-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="./ui.html" class="nav-links">UI</a>
+                    </li>
+                    <li>
+                        <a href="./weather.html" class="nav-links">Weather</a>
+                    </li>
+                    <li>
+                        <a href="./alert.html" class="nav-links">Alert</a>
+                    </li>
+                    <li>
+                        <a href="./caution.html" class="nav-links">Caution</a>
+                    </li>
+                    <li>
+                        <a href="./legal.html" class="nav-links">Legal</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html" class="nav-links">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section>
+                    <div>
+                        <h1>Permissions</h1>
+                        <p>
+                            In a few cases, permissions are requested to enable the full capabilities of the app. A request is made in order
+                            to automatically obtain the weather forecast for the current location. If request is denied, then the current
+                            city location has to be manually entered in the search bar.
+                        </p>
+                        <div class="screenshot">
+                            <img src="./images/ui/access_location.jpg" alt="location permission">
+                        </div>
+                    </div>
+                    <div>
+                        Permission is also required to display local notifications based on current weather. For example, to obtain notifications
+                        if there is a thunderstorm in the current forecast, while to app is in background mode, permission is required.
+                    </div>
+                    <div class="screenshot">
+                        <img src="./images/ui/note_permission.jpg" alt="notification permission">
+                    </div>
+                    <hr>
+                </section>
+                <section>
+                    <div>
+                        <h1>User Interface Interactions.</h1>
+                        <p>User Interface Interactions provides a summary of the features and flow of the user Interface. It shows how to
+                            search for the weather forecast for a particular city and shows how to make app settings changes.
+                        </p>
+                    </div>
+                </section>
+                <section>
+                    <div class="icon-row">
+                        <img class="tabbar-icon" src="./images/ui/search2x.png" alt="search icon">
+                        <div class="text-container">
+                            <div><h1>Search Cities</h1></div>
+                        </div>
+                    </div>
+                    <div class="screenshot">
+                        <p>Start to process of obtaining the weather forecast for a new city by selecting the search icon on the tab bar.</p>
+                        <img src="./images/ui/tabbar_search.png" alt="search tabbar">
+                    </div>
+                    <div class="screenshot">
+                        <p>Weather forecast, for a city in the continental United States is obtained by entering a city name in the search bar.
+                        </p>
+                        <img src="./images/ui/search_cities.jpg" alt="search bar">
+                    </div>
+                    <div>
+                        <h2>Map Callout Forecast</h2>
+                        <p>Selecting a city from the table of search results, generates a one day forecast which is overlayed on a map of
+                            the city.
+                        </p>
+                        <div class="screenshot">
+                            <img src="./images/screenshot/360/screen_callout.jpg" alt="screen callout">
+                        </div>
+                    </div>
+                    <p>Tapping on the blue Forecast button loads a more comprehensive weather forecast view.</p>
+                    <hr>
+                </section>
+                <section>
+                    <div class="icon-row">
+                        <img class="tabbar-icon" src="./images/ui/umbrella2x.png" alt="umbrella icon">
+                        <div class="text-container">
+                            <div><h1>Weather Forecast</h1></div>
+                        </div>
+                    </div>
+                    <div class="screenshot">
+                        <img src="./images/ui/tabbar_wx.png" alt="wx tabbar">
+                    </div>
+                    <div>
+                        <h2>Daily Forecast</h2>
+                        <div class="screenshot">
+                            <img src="./images/screenshot/360/screen_alert.jpg" alt="screen alert">
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Alert Detail</h2>
+                        <img src="./images/screenshot/360/screen_alert_detail.jpg" alt="alert detail">
+                    </div>
+                    <hr>
+                </section>
+                <section>
+                    <div class="icon-row">
+                        <img class="tabbar-icon" src="./images/ui/setting2x.png" alt="settings icon">
+                        <div class="text-container">
+                            <div><h1>App Settings</h1></div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/ui/tabbar_settings.jpg" alt="settings">
+                    </div> 
+                    <div>
+                        <h2>Setting Options</h2>
+                        <img src="./images/ui/setting_options.jpg" alt="setting options">
+                    </div> 
+                    <div>
+                        <h2>Remove City from List</h2>
+                        <img src="./images/ui/settings_edit_city.jpg" alt="settings">
+                    </div>                   
+                    <hr>
+                </section>
+                <section>
+                    <div class="icon-row">
+                        <img class="tabbar-icon" src="./images/ui/bluehorn.png" alt="hour glass">
+                        <div class="text-container">
+                            <div><h1>Weather Notification Settings</h1></div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./images/ui/note_settings.jpg" alt="notification settings">
+                    </div>
+                    <hr>
+                </section>
+                <section>
+                    <div class="icon-row">
+                        <img class="tabbar-icon" src="./images/ui/hour_glass.png" alt="hour glass">
+                        <div class="text-container">
+                            <div><h1>Alert Scheduling</h1></div>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Begin setting the alert update schedule by selecting the device's settings app.</p>
+                        <div class="screenshot">
+                            <img src="./images/ui/screen_settings_app.jpg" alt="settings app">
+                        </div>
+                        <p>
+                            Weather alert updates can be scheduled using the iOS settings app. By default alert updates are scheduled for Automatic
+                            updates. Notifications can be scheduled for:
+                            <ul>
+                                <li>Auto</li>
+                                <li>1 hour</li>
+                                <li>2 hours</li>
+                                <li>4 hours</li>
+                                <li>8 hours</li>
+                                <li>12 hours</li>
+                            </ul> 
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Settings App</h2>
+                        <img src="./images/ui/pass_accounts.jpg" alt="settings">
+                    </div>
+                    <div>
+                        <h2>WxAlert Settings</h2>
+                        <img src="./images/ui/app_settings_wxalert.jpg" alt="settings">
+                    </div>
+                    <div>
+
+                    </div>
+                </section>
+            </article>
+        </main>
+ 
+        <footer>
+            <hr>
+            &copy; <?php echo date("Y"); ?> wxalert
+        </footer>
+    </body>
+</html>    
